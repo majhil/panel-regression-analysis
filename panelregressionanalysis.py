@@ -58,7 +58,7 @@ df.shape
 
 import statsmodels.api as sm
 import statsmodels.formula.api as smf
-!pip install linearmodels
+# !pip install linearmodels
 import linearmodels
 from linearmodels.panel import PanelOLS
 from linearmodels import RandomEffects
@@ -148,12 +148,12 @@ from linearmodels import RandomEffects
 re_model7 = RandomEffects.from_formula('Life_Expectancy ~ 1 + Annual_CO2_emissions + GDP_per_capita + Infant_Mortality_Rate + health_expenditure_per_capita', data=df).fit()
 print(re_model7.summary)
 
-!pip install linearmodels --upgrade
+# !pip install linearmodels --upgrade
 
-!pip install numpy==1.24.3
+# !pip install numpy==1.24.3
 
-!pip install pydynpd --upgrade
-!pip install arch
+# !pip install pydynpd --upgrade
+# !pip install arch
 import statsmodels
 import arch
 import pydynpd
